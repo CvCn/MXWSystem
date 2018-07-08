@@ -146,7 +146,7 @@
 <!-- 页面底部信息 -->
 <div class="bottom" style="opacity: 0.618;">
   <mxw-well>
-    <a href="http://moxiaowei.com" target="_blank" style="color: black;">Copyright (c) 2018 莫小伟</a>
+    <a href="https://github.com/CvCn/MXWSystem/blob/master/LICENSE" target="_blank" style="color: black;">Copyright (c) 2018 莫小伟</a>
   </mxw-well>
 </div>
 
@@ -448,7 +448,7 @@ export default {
   },
   created() {
     this.clicked = "home";
-    console.info('本系统框架已经开源，需要源代码请移步github.com/CvCn，如果您想开发应用或者需要技术探讨，欢迎联系邮箱moxiaoweiblog@163.com')
+    console.info('本系统框架使用MIT开源协议，需要源代码请移步github.com/CvCn，如果您想开发应用或者需要技术探讨，欢迎联系邮箱moxiaoweiblog@163.com')
   }
 };
 </script>
