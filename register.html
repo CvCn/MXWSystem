@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <!-- saved from url=(0014) about:internet  -->
+    <!-- jQuery -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <script src="/js/words.js"></script> -->
+    <link rel="shortcut icon" href="http://moxiaowei.com/img/M.png" />
+    <title>MXWSystem-register</title>
+    <style>
+        #bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .mxw-well {
+            background-color: white;
+            padding: 30px;
+            opacity: 0.85;
+            border-radius: 6px;
+        }
+        
+        .mxw-well-bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-image: url('/img/bg (1).jpg');" id="bg">
+        <div class="col-sm-5 col-xs-10">
+            <div class="mxw-well">
+                <form class="form-horizontal" role="form">
+                    <div style="text-align: center;">
+                        <h5>MXWSystem</h5>
+                        <h3>注册</h3>
+                    </div>
+                    <label for="">用户名 *</label>
+                    <input type="text" name="name" class="form-control" maxlength="16" minlength="4" placeholder="请输入登录账户"><br>
+                    <label for="">密码 *</label>
+                    <input type="password" name="pwd" class="form-control" maxlength="16" minlength="6" placeholder="请输入登录密码"><br>
+                    <label for="">确认密码 *</label>
+                    <input type="password" name="repwd" class="form-control" maxlength="16" minlength="6" placeholder="请输入登录密码"><br>
+                    <label for="">验证码 *</label>
+                    <input type="text" name="code" class="form-control" maxlength="4" minlength="4" placeholder="请输入验证码"><br>
+
+                    <button type="submit" class="form-control btn btn-primary">立即注册</button><br><br>
+                    <!-- <div class="mxw-well-bottom">
+                        <a href="">立即注册</a>
+                        <a href="">忘记密码？</a>
+                    </div> -->
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function() {
+
+        window.onresize = function() {
+            var height = window.innerHeight;
+            $('#bg').height(height);
+            console.log(height);
+        }
+
+        window.onload = new function() {
+            var height = window.innerHeight;
+            $('#bg').height(height);
+            var random = Math.floor(Math.random() * 100 % 11 + 1);
+            $('#bg').attr("style", "background-image: url('/img/bg (" + random + ").jpg'); height: " + height + "px");
+        }
+
+
+    })
+</script>
+
+</html>
